@@ -12,10 +12,13 @@ const Upload = () => {
 
     // the configuration information is fetched from the .env file
     const config = {
-        bucketName: process.env.REACT_APP_BUCKET_NAME,
-        region: process.env.REACT_APP_REGION,
-        accessKeyId: process.env.REACT_APP_ACCESS,
-        secretAccessKey: process.env.REACT_APP_SECRET,
+    forcePathStyle: false, // Configures to use subdomain/virtual calling format.
+    endpoint: "https://nyc3.digitaloceanspaces.com",
+    region: "us-east-1",
+    credentials: {
+      accessKeyId: process.env.SPACES_KEY,
+      secretAccessKey: process.env.SPACES_SECRET
+    }
     }
 
     const handleFileInput = (e) => {

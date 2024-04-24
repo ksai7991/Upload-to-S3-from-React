@@ -13,7 +13,7 @@ const Upload = () => {
     // the configuration information is fetched from the .env file
     const config = {
     forcePathStyle: false, // Configures to use subdomain/virtual calling format.
-    endpoint: "https://nyc3.digitaloceanspaces.com",
+    endpoint: "https://krishnanyc3.nyc3.digitaloceanspaces.com",
     region: "us-east-1",
     credentials: {
       accessKeyId: process.env.SPACES_KEY,
